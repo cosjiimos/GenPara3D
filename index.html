@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Enhancing 3D Design Editing Process by Predicting User-Preferred Design Space Leveraging Text-Conditional Shape Parameters">
+    content="Enhancing 3D Design Editing Process by Predicting User-Preferred Design Space Leveraging Text-Conditional Shape Parameters">
   <meta name="keywords" content="GenPara">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GenPara: Enhancing 3D Design Editing Process by Predicting User-Preferred Design Space Leveraging Text-Conditional Shape Parameters</title>
+  <title>GenPara: Enhancing 3D Design Editing Process by Predicting User-Preferred Design Space Leveraging
+    Text-Conditional Shape Parameters</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -22,15 +24,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/fav.gif">
 
@@ -40,29 +40,30 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://jiinchoi.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://jiinchoi.com">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
         </a>
-        <!-- <div class="navbar-dropdown">
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <!-- <div class="navbar-dropdown">
           <a class="navbar-item" href="https://hypernerf.github.io">
             HyperNeRF
           </a>
@@ -76,216 +77,275 @@
             PhotoShape
           </a>
         </div> -->
+        </div>
       </div>
+
     </div>
-
-  </div>
-</nav>
+  </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">GenPara: Enhancing the 3D Design Editing Process by Inferring Users' Regions of Interest with Text-Conditional Shape Parameters</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://jiinchoi.com/">Jiin Choi</a><sup>1,2</sup>,</span>
-            <span class="author-block">
-              <a href="">Seung Won Lee</a><sup>1,2</sup>,</span>
-            <span class="author-block">
-              <a href="https://designinformatics.hanyang.ac.kr/People_Kyung-Hoon-Hyun">Kyung Hoon Hyun</a><sup>1,2</sup>,
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup> Hanyang University ,</span>
-            <span class="author-block"><sup>2</sup>Human-Centered AI Design Institute</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://dl.acm.org/doi/10.1145/3706598.3713502"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2503.14096"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=__trDqZ1dqM"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/cosjiimos/Genpara"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
+            <h1 class="title is-1 publication-title">GenPara: Enhancing the 3D Design Editing Process by Inferring
+              Users' Regions of Interest with Text-Conditional Shape Parameters</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://jiinchoi.com/">Jiin Choi</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="">Seung Won Lee</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://designinformatics.hanyang.ac.kr/People_Kyung-Hoon-Hyun">Kyung Hoon
+                  Hyun</a><sup>1,2</sup>,
             </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup> Hanyang University ,</span>
+              <span class="author-block"><sup>2</sup>Human-Centered AI Design Institute</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://dl.acm.org/doi/10.1145/3706598.3713502"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2503.14096" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=__trDqZ1dqM"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/cosjiimos/Genpara"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/genpara_gif.gif"
-     alt="GenPara demo"
-     style="width:100%;">
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">GenPara</span> Overview of GenPara, an interactive 3D design editing system that leverages text-conditional shape parameters of 3D design and infers the users’ regions of interest.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            In 3D design, specifying design objectives and visualizing complex
-shapes through text alone proves to be a significant challenge. Although advancements in 3D GenAI have significantly enhanced
-part assembly and the creation of high-quality 3D designs, many
-systems still to dynamically generate and edit design elements
-based on the shape parameters. To bridge this gap, we proposeGenPara, an interactive 3D design editing system that leverages
-text-conditional shape parameters of part-aware 3D designs and
-visualizes design space within the Exploration Map and Design Versioning Tree. Additionally, among the various shape parameters generated by LLM, the system extracts and provides design
-outcomes within the user’s regions of interest based on Bayesian
-inference. A user study (N = 16) revealed that GenPara enhanced the
-comprehension and management of designers with text-conditional
-shape parameters, streamlining design exploration and concretization. This improvement boosted efficiency and creativity of the 3D
-design process.
-          </p> 
-        </div>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/genpara_gif.gif" alt="GenPara demo" style="width:100%;">
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">GenPara</span> Overview of GenPara, an interactive 3D design editing system that leverages
+          text-conditional shape parameters of 3D design and infers the users’ regions of interest.
+        </h2>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </section>
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/watch?v=__trDqZ1dqM"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              In 3D design, specifying design objectives and visualizing complex
+              shapes through text alone proves to be a significant challenge. Although advancements in 3D GenAI have
+              significantly enhanced
+              part assembly and the creation of high-quality 3D designs, many
+              systems still to dynamically generate and edit design elements
+              based on the shape parameters. To bridge this gap, we proposeGenPara, an interactive 3D design editing
+              system that leverages
+              text-conditional shape parameters of part-aware 3D designs and
+              visualizes design space within the Exploration Map and Design Versioning Tree. Additionally, among the
+              various shape parameters generated by LLM, the system extracts and provides design
+              outcomes within the user’s regions of interest based on Bayesian
+              inference. A user study (N = 16) revealed that GenPara enhanced the
+              comprehension and management of designers with text-conditional
+              shape parameters, streamlining design exploration and concretization. This improvement boosted efficiency
+              and creativity of the 3D
+              design process.
+            </p>
+          </div>
         </div>
       </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/watch?v=__trDqZ1dqM" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!--/ Paper video. -->
     </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
+  </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
+  <section class="section">
+    <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
+      <div class="columns is-centered">
 
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Design Goals</h2>
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Design Goals</h2>
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Key Tools</h3>
+            <h3 class="title is-4">Challenges and Researcg Goals</h3>
             <figure class="image" style="margin-top: 1.5rem;">
-      <img src="./static/images/1.png"
-           alt="Design goals overview">
-    </figure>
-        <div class="content has-text-justified">
-          <p>
-            Text-conditional part-level editing for precise shape modifications using shape parameters.
-            Visualization of the design space to help users navigate design variations effectively.
-            Hierarchical visualization of designs to track and refine design evolution systematically.
+              <img src="./static/images/CoreChallege.png" alt="Design goals overview">
+            </figure>
+            <figure class="image" style="margin-top: 1.5rem;">
+              <img src="./static/images/ResearchChallege.png" alt="Design goals overview">
+            </figure>
+            <div class="content has-text-justified">
+              <ul>
+                <li>
+                  Text-conditional part-level editing for precise shape modifications using shape parameters.
+                </li>
+                <li>
+                  <strong>Visualization of the design space</strong> to help users navigate design variations
+                  effectively.
+                </li>
+                <li>
+                  Hierarchical visualization of designs to track and refine design evolution systematically.
+                </li>
+              </ul>
+            </div>
 
-          </p>
+            <h3 class="title is-4">Key Tools</h3>
+            <figure class="image" style="margin-top: 1.5rem;">
+              <img src="./static/images/Tools.png" alt="Design goals overview">
+            </figure>
+            <div class="content has-text-justified">
+              <ul>
+                <li>
+                  Text-conditional part-level editing for precise shape modifications using shape parameters.
+                </li>
+                <li>
+                  <strong>Visualization of the design space</strong> to help users navigate design variations
+                  effectively.
+                </li>
+                <li>
+                  Hierarchical visualization of designs to track and refine design evolution systematically.
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
         </div>
       </div>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <div class="columns is-centered">
+
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">LLM Based 3D Generation And Editing</h2>
+
+            <figure class="image" style="margin-top: 1.5rem;">
+              <img src="./static/images/FineTuned.png" alt="Design goals overview">
+            </figure>
+            <figure class="image" style="margin-top: 1.5rem;">
+              <img src="./static/images/Results.png" alt="Design goals overview">
+            </figure>
+                        <figure class="image" style="margin-top: 1.5rem;">
+              <img src="./static/images/Airplane.png" alt="Design goals overview">
+            </figure>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+
     </div>
+  </section>
+
+
     </div>
-    <!--/ Animation. -->
+  </section>
 
 
-
-  </div>
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{choi2025genpara,
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{choi2025genpara,
   title={GenPara: Enhancing the 3D Design Editing Process by Inferring Users' Regions of Interest with Text-Conditional Shape Parameters},
   author={Choi, Jiin and Lee, Seung Won and Hyun, Kyung Hoon},
   booktitle={Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems},
   pages={1--21},
   year={2025}
 }</code></pre>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
