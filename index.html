@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://cosjiimos.github.io/GenPara/static/images/figure1.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="icon" href="./static/images/fav.gif" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8D%B3</text></svg>" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -39,18 +39,18 @@
             serif: ['Lora', 'ui-serif', 'Georgia', 'serif'],
           },
           colors: {
-            /* Warm terracotta accent */
+            /* Violet / purple accent */
             accent: {
-              50:  '#fbf4ee',
-              100: '#f6e6da',
-              200: '#edc9b1',
-              300: '#e0a784',
-              400: '#cf7f54',
-              500: '#bd6336',
-              600: '#a64f29',
-              700: '#883f23',
-              800: '#6e3420',
-              900: '#5a2d1d',
+              50:  '#f5f3fb',
+              100: '#ebe5f8',
+              200: '#d6c9f0',
+              300: '#b8a3e4',
+              400: '#9676d4',
+              500: '#7c52c4',
+              600: '#6a3fb0',
+              700: '#583394',
+              800: '#482b78',
+              900: '#3b2560',
             },
             /* Soft sage/olive */
             sage: {
@@ -74,7 +74,7 @@
 
     /* Pipeline / tool cards */
     .stage-card { transition: border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease; }
-    .stage-card:hover { border-color: rgb(207 127 84); box-shadow: 0 6px 22px -12px rgba(110,52,32,0.45); transform: translateY(-2px); }
+    .stage-card:hover { border-color: rgb(150 118 212); box-shadow: 0 6px 22px -12px rgba(72,43,120,0.45); transform: translateY(-2px); }
 
     /* Figure zoom-on-click cursor hint */
     .zoomable { cursor: zoom-in; }
@@ -100,6 +100,7 @@
         <a href="#challenges" class="hover:text-accent-700">Challenges</a>
         <a href="#tools" class="hover:text-accent-700">Key tools</a>
         <a href="#results" class="hover:text-accent-700">Generation</a>
+        <a href="#study" class="hover:text-accent-700">User study</a>
       </div>
       <div class="flex items-center gap-3">
         <!-- Related projects dropdown -->
@@ -118,13 +119,13 @@
               </div>
               <p class="text-[11.5px] text-gray-500 leading-snug mt-0.5">Knowledge graph-augmented conversational AI for design</p>
             </a>
-            <a href="https://jiinchoi.com/" target="_blank" rel="noopener"
+            <a href="https://cosjiimos.github.io/" target="_blank" rel="noopener"
                class="block px-3 py-2.5 rounded-lg hover:bg-accent-50 transition group">
               <div class="flex items-center justify-between">
                 <span class="font-semibold text-gray-900 text-[13px] group-hover:text-accent-700">More research</span>
                 <svg class="w-3.5 h-3.5 text-gray-300 group-hover:text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </div>
-              <p class="text-[11.5px] text-gray-500 leading-snug mt-0.5">jiinchoi.com</p>
+              <p class="text-[11.5px] text-gray-500 leading-snug mt-0.5">cosjiimos.github.io</p>
             </a>
           </div>
         </div>
@@ -152,13 +153,13 @@
       </p>
 
       <div class="text-gray-700 mb-2 text-sm">
-        <a href="https://jiinchoi.com/" target="_blank" rel="noopener" class="hover:text-accent-700 underline-offset-2 hover:underline">Jiin Choi</a><sup class="text-gray-400">1,2</sup>,
+        <a href="https://cosjiimos.github.io/" target="_blank" rel="noopener" class="hover:text-accent-700 underline-offset-2 hover:underline">Jiin Choi</a><sup class="text-gray-400">1,2</sup>,
         <a href="#" class="hover:text-accent-700 underline-offset-2 hover:underline">Seung Won Lee</a><sup class="text-gray-400">1,2</sup>,
         <a href="https://designinformatics.hanyang.ac.kr/People_Kyung-Hoon-Hyun" target="_blank" rel="noopener" class="hover:text-accent-700 underline-offset-2 hover:underline">Kyung Hoon Hyun</a><sup class="text-gray-400">1,2</sup>
       </div>
       <div class="text-gray-500 text-[11px] leading-relaxed mb-1 max-w-2xl mx-auto">
-        <sup>1</sup>Hanyang University &nbsp;&middot;&nbsp;
-        <sup>2</sup>Human-Centered AI Design Institute
+        <sup>1</sup>Design Informatics Lab, Interior Architecture Design, Hanyang University, Seoul, Republic of Korea<br />
+        <sup>2</sup>Human-Centered AI Design Institute, Hanyang University, Seoul, Republic of Korea
       </div>
       <div class="text-gray-400 text-[11px] mb-7">
         ACM CHI Conference on Human Factors in Computing Systems (CHI&nbsp;&rsquo;25)
@@ -312,6 +313,134 @@
         <img src="./static/images/Airplane.png" alt="GenPara editing an airplane 3D design through text-conditional shape parameters." class="w-full block rounded-xl border border-gray-200 bg-white zoomable" />
         <figcaption class="mt-2 text-gray-500 text-[11px] leading-relaxed text-center"><b>Part-aware editing example.</b></figcaption>
       </figure>
+    </div>
+  </section>
+
+  <!-- ============================== USER STUDY ============================== -->
+  <section id="study" class="section-anchor max-w-6xl mx-auto px-6 py-14">
+    <p class="text-[10px] uppercase tracking-widest text-accent-700 font-semibold mb-2">User study</p>
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Sixteen designers, GenPara vs. a prompt-only baseline.</h2>
+    <p class="text-gray-500 text-[15px] mb-8 max-w-3xl">
+      A within-subjects study with <b>16 design-major participants</b> (7 women, 9 men; M&nbsp;age&nbsp;=&nbsp;24.6) from architecture, construction, interior, and lighting design &mdash; 14 had prior GenAI experience. Each explored and concretized a chair design for a given interior space using <b class="text-accent-700">GenPara</b> and a <b>Baseline</b> without its key features (Exploration Map, LLM design alternatives, Design Versioning Tree), followed by a 20-minute semi-structured interview.
+    </p>
+
+    <!-- Three RQ cards -->
+    <div class="grid md:grid-cols-3 gap-5 mb-10">
+      <div class="border border-gray-200 rounded-xl p-5">
+        <div class="text-[11px] font-mono text-accent-600 mb-2">RQ1 &middot; Comprehension &amp; visualization</div>
+        <p class="text-[13.5px] text-gray-700 leading-relaxed mb-3">GenPara helped designers grasp the relationship between text prompts and shape parameters. Its intuitive visualization tools significantly aided understanding during exploration and goal concretization.</p>
+        <div class="text-[12px] text-gray-500">Exploration (CSI): <b class="text-gray-800">8.50</b> vs. <b>5.06</b> Baseline (<span class="font-mono">p&lt;.001</span>)</div>
+      </div>
+      <div class="border border-gray-200 rounded-xl p-5">
+        <div class="text-[11px] font-mono text-accent-600 mb-2">RQ2 &middot; Prompting effort &amp; specification</div>
+        <p class="text-[13.5px] text-gray-700 leading-relaxed mb-3">Part-based editing let designers iteratively refine a single design instead of picking among undefined results &mdash; expressing detailed intent with far fewer prompts, despite spending more time per session.</p>
+        <div class="text-[12px] text-gray-500">Prompt count: <b class="text-gray-800">8</b> vs. <b>2</b> &middot; Effort (TLX): <b class="text-gray-800">2.94</b> vs. <b>4.25</b> (<span class="font-mono">p&lt;.05</span>)</div>
+      </div>
+      <div class="border border-gray-200 rounded-xl p-5">
+        <div class="text-[11px] font-mono text-accent-600 mb-2">RQ3 &middot; Creativity &amp; efficiency</div>
+        <p class="text-[13.5px] text-gray-700 leading-relaxed mb-3">Designers reported lower frustration, higher transparency, and a significantly greater willingness to keep using GenPara &mdash; rating part-level designs more highly than prompt-only ones.</p>
+        <div class="text-[12px] text-gray-500">Enjoyment (CSI): <b class="text-gray-800">8.38</b> vs. <b>5.94</b> (<span class="font-mono">p&lt;.01</span>)</div>
+      </div>
+    </div>
+
+    <!-- Metrics table (NASA-TLX + CSI) -->
+    <div class="overflow-x-auto rounded-xl border border-gray-200 bg-white mb-3">
+      <table class="w-full text-[13.5px]">
+        <thead>
+          <tr class="border-b border-gray-200 text-gray-500">
+            <th class="text-left font-medium px-4 py-3">Survey item</th>
+            <th class="text-right font-medium px-4 py-3 text-accent-700">GenPara</th>
+            <th class="text-right font-medium px-4 py-3">Baseline</th>
+            <th class="text-right font-medium px-4 py-3">Sig.</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100 font-mono">
+          <tr><td class="px-4 py-2.5 font-sans">CSI &middot; Exploration</td><td class="px-4 py-2.5 text-right font-semibold text-accent-700">8.50</td><td class="px-4 py-2.5 text-right text-gray-500">5.06</td><td class="px-4 py-2.5 text-right text-gray-500">***</td></tr>
+          <tr><td class="px-4 py-2.5 font-sans">CSI &middot; Enjoyment</td><td class="px-4 py-2.5 text-right font-semibold text-accent-700">8.38</td><td class="px-4 py-2.5 text-right text-gray-500">5.94</td><td class="px-4 py-2.5 text-right text-gray-500">**</td></tr>
+          <tr><td class="px-4 py-2.5 font-sans">CSI &middot; Results Worth Effort</td><td class="px-4 py-2.5 text-right font-semibold text-accent-700">8.13</td><td class="px-4 py-2.5 text-right text-gray-500">5.50</td><td class="px-4 py-2.5 text-right text-gray-500">**</td></tr>
+          <tr><td class="px-4 py-2.5 font-sans">CSI &middot; Immersion</td><td class="px-4 py-2.5 text-right font-semibold text-accent-700">7.94</td><td class="px-4 py-2.5 text-right text-gray-500">6.25</td><td class="px-4 py-2.5 text-right text-gray-500">*</td></tr>
+          <tr><td class="px-4 py-2.5 font-sans">CSI &middot; Expressiveness</td><td class="px-4 py-2.5 text-right font-semibold text-accent-700">6.25</td><td class="px-4 py-2.5 text-right text-gray-500">3.75</td><td class="px-4 py-2.5 text-right text-gray-500">**</td></tr>
+          <tr><td class="px-4 py-2.5 font-sans">NASA-TLX &middot; Performance</td><td class="px-4 py-2.5 text-right font-semibold text-accent-700">5.81</td><td class="px-4 py-2.5 text-right text-gray-500">4.06</td><td class="px-4 py-2.5 text-right text-gray-500">***</td></tr>
+          <tr><td class="px-4 py-2.5 font-sans">NASA-TLX &middot; Effort <span class="text-gray-400">(lower is better)</span></td><td class="px-4 py-2.5 text-right font-semibold text-accent-700">2.94</td><td class="px-4 py-2.5 text-right text-gray-500">4.25</td><td class="px-4 py-2.5 text-right text-gray-500">*</td></tr>
+          <tr><td class="px-4 py-2.5 font-sans">NASA-TLX &middot; Frustration <span class="text-gray-400">(lower is better)</span></td><td class="px-4 py-2.5 text-right font-semibold text-accent-700">1.75</td><td class="px-4 py-2.5 text-right text-gray-500">3.06</td><td class="px-4 py-2.5 text-right text-gray-500">*</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-[12px] text-gray-500 mb-2">CSI on a 10-point scale, NASA-TLX on a 7-point scale. <span class="font-mono">* p&lt;.05 &nbsp; ** p&lt;.01 &nbsp; *** p&lt;.001</span>.</p>
+    <p class="text-[13px] text-gray-600 leading-relaxed max-w-3xl">
+      Physical demand was slightly higher with GenPara (<span class="font-mono">2.69</span> vs. <span class="font-mono">1.75</span>) due to its detailed, part-specific editing &mdash; the one cost of finer control. The extra time spent specifying goals translated into greater immersion and more thorough concretization.
+    </p>
+  </section>
+
+  <!-- ============================== DESIGNER QUOTES ============================== -->
+  <section id="voices" class="section-anchor bg-gray-50 border-y border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-14">
+      <p class="text-[10px] uppercase tracking-widest text-accent-700 font-semibold mb-2">In their words</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">What the designers said.</h2>
+      <p class="text-gray-500 text-[15px] mb-8 max-w-2xl">Excerpts from the in-depth interviews, on understanding the design space, expressing what text can&rsquo;t, and structuring the process.</p>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        <figure class="bg-white border border-gray-200 rounded-2xl p-6">
+          <blockquote class="text-gray-800 text-[15px] leading-relaxed">
+            &ldquo;Through the Exploration Map, I could intuitively understand which design I was viewing and which area I was exploring. This contrasted with Baseline, which only presented results &mdash; it&rsquo;s easy to facilitate the ideation of how to concretize the design.&rdquo;
+          </blockquote>
+          <figcaption class="mt-3 text-[12px] font-mono text-accent-700">&mdash; P3</figcaption>
+        </figure>
+
+        <figure class="bg-white border border-gray-200 rounded-2xl p-6">
+          <blockquote class="text-gray-800 text-[15px] leading-relaxed">
+            &ldquo;The design alternatives provided by GenPara visually represented complex parts effectively, greatly aiding in understanding details that were difficult to explain in text.&rdquo;
+          </blockquote>
+          <figcaption class="mt-3 text-[12px] font-mono text-accent-700">&mdash; P7</figcaption>
+        </figure>
+
+        <figure class="bg-white border border-gray-200 rounded-2xl p-6">
+          <blockquote class="text-gray-800 text-[15px] leading-relaxed">
+            &ldquo;After quickly refining the design I initially envisioned, I used the Exploration Map to explore alternatives. Watching the colors update, I realized I was focusing too much on one area and readjusted what I needed to focus on.&rdquo;
+          </blockquote>
+          <figcaption class="mt-3 text-[12px] font-mono text-accent-700">&mdash; P15</figcaption>
+        </figure>
+
+        <figure class="bg-white border border-gray-200 rounded-2xl p-6">
+          <blockquote class="text-gray-800 text-[15px] leading-relaxed">
+            &ldquo;Visualizing the changes in parameters throughout my process let me retrospectively review the overall process and assist in decision-making for future steps &mdash; making modifications to parts while considering shape transitions, for a diverse view.&rdquo;
+          </blockquote>
+          <figcaption class="mt-3 text-[12px] font-mono text-accent-700">&mdash; P16, on the Design Versioning Tree</figcaption>
+        </figure>
+
+        <figure class="bg-white border border-gray-200 rounded-2xl p-6">
+          <blockquote class="text-gray-800 text-[15px] leading-relaxed">
+            &ldquo;When generating an &lsquo;armchair,&rsquo; the design was positioned within a similar cluster. But a &lsquo;thin-framed chair&rsquo; spread across several clusters &mdash; making it intuitive to grasp the diversity and trends of shape parameters. This helped me quickly set my initial design goal.&rdquo;
+          </blockquote>
+          <figcaption class="mt-3 text-[12px] font-mono text-accent-700">&mdash; P12</figcaption>
+        </figure>
+
+        <figure class="bg-white border border-gray-200 rounded-2xl p-6">
+          <blockquote class="text-gray-800 text-[15px] leading-relaxed">
+            &ldquo;With Baseline, I had to modify prompts multiple times to obtain the chair with an extended leg rest, and this process was quite cumbersome and time-consuming.&rdquo;
+          </blockquote>
+          <figcaption class="mt-3 text-[12px] font-mono text-accent-700">&mdash; P10</figcaption>
+        </figure>
+      </div>
+
+      <!-- Discussion takeaways -->
+      <div class="mt-10">
+        <p class="text-[10px] uppercase tracking-widest text-accent-700 font-semibold mb-4">Discussion &middot; implications</p>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="stage-card bg-white border border-gray-200 rounded-xl p-5">
+            <h3 class="font-semibold text-gray-900 text-[15px] mb-1.5">Exploration &amp; concretization with shape parameters</h3>
+            <p class="text-[12.5px] text-gray-600 leading-snug">Comparing options in a visually structured design space leads to more informed decisions and helps designers concretize ideas that are hard to put into text.</p>
+          </div>
+          <div class="stage-card bg-white border border-gray-200 rounded-xl p-5">
+            <h3 class="font-semibold text-gray-900 text-[15px] mb-1.5">A novel LLM interaction in 3D space</h3>
+            <p class="text-[12.5px] text-gray-600 leading-snug">Designers edit detailed modifications by shape parameter &mdash; without deep 3D-modeling expertise &mdash; turning the LLM into a partner for creative dialogue rather than a one-shot generator.</p>
+          </div>
+          <div class="stage-card bg-white border border-gray-200 rounded-xl p-5">
+            <h3 class="font-semibold text-gray-900 text-[15px] mb-1.5">Expanding GenPara&rsquo;s impact</h3>
+            <p class="text-[12.5px] text-gray-600 leading-snug">Participants saw GenPara replacing time-consuming sketching/modeling and supporting client communication &mdash; with interest in extending it to phones, automobiles, architecture, and lighting.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
